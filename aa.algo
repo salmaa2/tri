@@ -1,0 +1,11 @@
+FOR i FROM 2 TO n.length STEP step 1 DO
+   a:=t[i]
+   j:= i 
+
+   WHILE ((j>1)and(t[j-1]>a)) DO
+
+     t[i]:= t[j-1]
+     j:= j-1
+   END_WHILE
+   t[j]:=a
+END_FOR
